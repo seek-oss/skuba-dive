@@ -1,0 +1,35 @@
+{
+  "name": "@seek/skuba-dive",
+  "description": "Runtime components for skuba",
+  "version": "0.0.0-semantically-released",
+  "main": "lib",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "register.js"
+  ],
+  "sideEffects": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "skuba build",
+    "commit": "smt commit",
+    "format": "skuba format",
+    "lint": "skuba lint",
+    "prerelease": "yarn build",
+    "release": "smt release",
+    "test": "skuba test --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SEEK-Jobs/skuba-dive.git"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "source-map-support": "^0.5.16"
+  },
+  "devDependencies": {
+    "@seek/seek-module-toolkit": "3.0.17",
+    "@seek/skuba": "3.4.0",
+    "@types/module-alias": "2.0.0"
+  }
+}
