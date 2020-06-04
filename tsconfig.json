@@ -1,0 +1,11 @@
+{
+  "extends": "@seek/seek-module-toolkit/config/tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "incremental": true,
+    "module": "CommonJS",
+    "outDir": "lib",
+    "removeComments": false
+  },
+  "exclude": ["lib/**/*", "template/**/*"]
+}
