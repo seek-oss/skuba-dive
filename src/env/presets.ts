@@ -12,7 +12,7 @@ export const nonNegativeInteger = create(parsers.nonNegativeInteger);
  * Create a function that reads an environment variable and validates it against
  * the provided array of choices.
  */
-export const oneOf = <T>(choices: ReadonlyArray<T>) =>
+export const oneOf = <T>(choices: readonly T[]) =>
   create(parsers.oneOf(choices));
 
 /**

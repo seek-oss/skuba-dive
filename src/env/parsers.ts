@@ -10,7 +10,7 @@ export const nonNegativeInteger = (input: string): number => {
 
 export const noop = <T>(input: T): T => input;
 
-export const oneOf = <T>(choices: ReadonlyArray<T>) => {
+export const oneOf = <T>(choices: readonly T[]) => {
   const isChoice = (value: unknown): value is typeof choices[number] =>
     new Set<unknown>(choices).has(value);
 
