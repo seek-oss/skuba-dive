@@ -1,5 +1,5 @@
 {
-  "extends": "@seek/seek-module-toolkit/config/tsconfig.json",
+  "extends": "@seek/skuba/config/tsconfig.json",
   "compilerOptions": {
     "declaration": true,
     "incremental": true,

@@ -1,12 +1,10 @@
 # 🤿🌊
 
-[![Buildkite pipeline](https://badge.buildkite.com/89449e4e608f5cb803a591a69693f6626f3a91129f014c58f9.svg?branch=master)](https://buildkite.com/seek/skuba-dive)
-[![npm package](https://img.shields.io/badge/npm-%40seek%2Fskuba--dive-cc3534.svg)](https://www.npmjs.com/package/@seek/skuba-dive)
-[![Slack channel](https://img.shields.io/badge/slack-%23indirect--apply-3f0f3f.svg)](https://slack.com/app_redirect?team=T02P37LGR&channel=indirect-apply)
-[![GitHub repos](https://img.shields.io/badge/users-@SEEK--Jobs-0d3880.svg)](https://github.com/search?q=filename%3Apackage.json+org%3ASEEK-Jobs+-repo%3ASEEK-Jobs%2Fskuba-dive+%22%40seek%2Fskuba-dive%22&type=Code)
-[![Upkeep](https://img.shields.io/badge/users-Upkeep-61d3b1.svg)](https://upkeep.ssod.skinfra.xyz/package#?name=@seek/skuba-dive)
+![GitHub Release](https://github.com/seek-oss/skuba-dive/workflows/Release/badge.svg?branch=master)
+![GitHub Validate](https://github.com/seek-oss/skuba-dive/workflows/Validate/badge.svg?branch=master)
+[![npm package](https://img.shields.io/npm/v/skuba-dive)](https://www.npmjs.com/package/skuba-dive)
 
-Minimal runtime for [`skuba`](https://github.com/SEEK-Jobs/skuba).
+Minimal runtime for [`skuba`](https://github.com/seek-oss/skuba).
 
 ## Table of contents
 
@@ -25,7 +23,7 @@ Functions for reading values out of environment variables.
 For example, in your `/src/config.ts`:
 
 ```typescript
-import { Env } from '@seek/skuba-dive';
+import { Env } from 'skuba-dive';
 
 const ENVIRONMENTS = ['dev', 'prod'] as const;
 
@@ -50,7 +48,7 @@ Runtime hook for:
 Make a side-effectful import at the top of your entry point, e.g. `/src/app.ts`:
 
 ```typescript
-import '@seek/skuba-dive/register';
+import 'skuba-dive/register';
 
 import { config } from 'src/config';
 
@@ -66,14 +64,17 @@ The hook must be imported from a module that sits directly under `/src` for modu
 - General application boilerplate that doesn't justify a standalone module
 - Runtime functionality that complements `skuba`
 
-See `skuba`'s [goals](https://github.com/SEEK-Jobs/skuba#goals) and [non-goals](https://github.com/SEEK-Jobs/skuba#non-goals) for more information.
+See `skuba`'s [goals] and [non-goals] for more information.
+
+[goals]: https://github.com/seek-oss/skuba#goals
+[non-goals]: https://github.com/seek-oss/skuba#non-goals
 
 ## Development
 
 ### Prerequisites
 
-- Node.js 12
-- npm read token for `@seek` packages
+- Node.js 12+
+- Yarn 1.x
 
 ```shell
 yarn install
