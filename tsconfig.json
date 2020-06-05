@@ -4,6 +4,7 @@
     "declaration": true,
     "incremental": true,
     "module": "CommonJS",
+    "moduleResolution": "node",
     "outDir": "lib",
     "removeComments": false
   },
