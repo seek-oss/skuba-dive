@@ -545,36 +545,6 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@seek/skuba@3.4.1":
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/@seek/skuba/-/skuba-3.4.1.tgz#0580bd3b02731d6c490cb3b4f1d73d2f6ff545dc"
-  integrity sha512-HmdvyGgm/LxNAkeXu89ufH2gPTSDgFLk9iym2CgOMHBxazpT3lYhOkQyWzs9p1JWO3sGHpnDpvQq/YD6nUuNRg==
-  dependencies:
-    "@types/jest" "^25.2.3"
-    chalk "^4.0.0"
-    concurrently "^5.2.0"
-    ejs "^3.1.3"
-    enquirer "^2.3.5"
-    eslint "^6.8.0"
-    eslint-config-seek "6.0.2"
-    eslint-plugin-jest "^23.13.1"
-    execa "^4.0.1"
-    fs-extra "^9.0.0"
-    get-port "^5.1.1"
-    jest "^26.0.1"
-    lodash "^4.17.15"
-    normalize-package-data "^2.5.0"
-    npm-run-path "^4.0.1"
-    npm-which "^3.0.1"
-    prettier "2.0.5"
-    read-pkg-up "^7.0.1"
-    runtypes "^4.2.0"
-    ts-jest "^26.0.0"
-    ts-node "^8.10.1"
-    ts-node-dev "^1.0.0-pre.44"
-    tsconfig-seek "1.0.2"
-    typescript "3.9.3"
-
 "@semantic-release/commit-analyzer@^8.0.0":
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-8.0.1.tgz#5d2a37cd5a3312da0e3ac05b1ca348bf60b90bca"
@@ -6901,6 +6871,36 @@ sisteransi@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.4.tgz#386713f1ef688c7c0304dc4c0632898941cad2e3"
   integrity sha512-/ekMoM4NJ59ivGSfKapeG+FWtrmWvA1p6FBZwXrqojw90vJu8lBmrTxCMuBCydKtkaUe2zt4PlxeTKpjwMbyig==
+
+skuba@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/skuba/-/skuba-3.4.1.tgz#25fb418c13b635ee77f7b7068522aee9cf2eb82f"
+  integrity sha512-3/DovSfcOY711tpWJS1VTzuSRHq1lyNZXtew/SDyI8/LTPH+laASvWtVWbQVwGcdf+aAkGvnBIoO2mvDAkYhQw==
+  dependencies:
+    "@types/jest" "^25.2.3"
+    chalk "^4.0.0"
+    concurrently "^5.2.0"
+    ejs "^3.1.3"
+    enquirer "^2.3.5"
+    eslint "^6.8.0"
+    eslint-config-seek "6.0.2"
+    eslint-plugin-jest "^23.13.1"
+    execa "^4.0.1"
+    fs-extra "^9.0.0"
+    get-port "^5.1.1"
+    jest "^26.0.1"
+    lodash "^4.17.15"
+    normalize-package-data "^2.5.0"
+    npm-run-path "^4.0.1"
+    npm-which "^3.0.1"
+    prettier "2.0.5"
+    read-pkg-up "^7.0.1"
+    runtypes "^4.2.0"
+    ts-jest "^26.0.0"
+    ts-node "^8.10.1"
+    ts-node-dev "^1.0.0-pre.44"
+    tsconfig-seek "1.0.2"
+    typescript "3.9.3"
 
 slash@^3.0.0:
   version "3.0.0"

@@ -1,1 +1,1 @@
-module.exports = require('@seek/skuba/config/jest');
+module.exports = require('skuba/config/jest');

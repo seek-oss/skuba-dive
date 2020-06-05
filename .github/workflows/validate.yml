@@ -19,9 +19,12 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: 12.x
-      # - name: Install dependencies
-      #   run: yarn install --frozen-lockfile --ignore-optional --non-interactive
-      # - name: Lint
-      #   run: yarn lint
-      # - name: Test
-      #   run: yarn test
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile --ignore-optional --non-interactive
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Test
+        run: yarn test
