@@ -9,7 +9,7 @@
     "register.js"
   ],
   "sideEffects": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "skuba build",
     "format": "skuba format",
