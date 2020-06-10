@@ -5,7 +5,9 @@
   "main": "lib",
   "typings": "lib/index.d.ts",
   "files": [
-    "lib",
+    "lib/**/*.d.ts",
+    "lib/**/*.js",
+    "lib/**/*.js.map",
     "register.js"
   ],
   "sideEffects": true,
@@ -14,8 +16,7 @@
     "build": "skuba build",
     "format": "skuba format",
     "lint": "skuba lint",
-    "prerelease": "yarn build",
-    "release": "semantic-release --success false",
+    "release": "yarn build && semantic-release --success false",
     "test": "skuba test --coverage"
   },
   "repository": {
