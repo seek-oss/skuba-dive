@@ -11,12 +11,34 @@ Minimal runtime for [`skuba`](https://github.com/seek-oss/skuba).
 ## Table of contents
 
 - [API reference](#api-reference)
+  - [Assert](#assert)
   - [Env](#env)
   - [Register](#register)
 - [Design](#design)
 - [Development](#development)
 
 ## API reference
+
+### Assert
+
+[TypeScript assertion functions] for narrowing down types in unit tests and the like.
+
+These may be used for input validation in your application code at a pinch,
+but consider a proper validation library with richer error handling and reporting.
+
+[typescript assertion functions]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#assertion-functions
+
+```typescript
+import { Assert } from 'skuba-dive';
+
+it('should think of a good test case name', () => {
+  const result = numberOrNull();
+  // result is number | null
+
+  Assert.notNullish(result);
+  // result is number
+});
+```
 
 ### Env
 

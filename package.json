@@ -30,6 +30,6 @@
   "devDependencies": {
     "@types/module-alias": "2.0.0",
     "semantic-release": "17.0.8",
-    "skuba": "3.4.1"
+    "skuba": "3.5.1"
   }
 }

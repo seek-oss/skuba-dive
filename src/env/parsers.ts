@@ -16,7 +16,7 @@ export const oneOf = <T>(choices: readonly T[]) => {
 
   return (input: unknown): typeof choices[number] => {
     if (!isChoice(input)) {
-      throw Error(`not a supported choice: '${input}'`);
+      throw Error(`not a supported choice: '${String(input)}'`);
     }
 
     return input;
