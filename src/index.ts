@@ -1,3 +1,2 @@
-import * as Env from './env';
-
-export { Env };
+export * as Assert from './assert';
+export * as Env from './env';
