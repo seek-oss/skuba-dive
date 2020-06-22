@@ -1,7 +1,7 @@
 # 🤿🌊
 
-![GitHub Release](https://github.com/seek-oss/skuba-dive/workflows/Release/badge.svg?branch=master)
-![GitHub Validate](https://github.com/seek-oss/skuba-dive/workflows/Validate/badge.svg?branch=master)
+[![GitHub Release](https://github.com/seek-oss/skuba-dive/workflows/Release/badge.svg?branch=master)](https://github.com/seek-oss/skuba-dive/actions?query=workflow%3ARelease)
+[![GitHub Validate](https://github.com/seek-oss/skuba-dive/workflows/Validate/badge.svg?branch=master)](https://github.com/seek-oss/skuba-dive/actions?query=workflow%3AValidate)
 [![Node.js version](https://img.shields.io/badge/node-%3E%3D%2012-brightgreen)](https://nodejs.org/en/)
 [![npm package](https://img.shields.io/npm/v/skuba-dive)](https://www.npmjs.com/package/skuba-dive)
 [![Powered by skuba](https://img.shields.io/badge/🤿%20skuba-powered-009DC4)](https://github.com/seek-oss/skuba)
