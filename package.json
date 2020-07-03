@@ -1,17 +1,33 @@
 {
-  "name": "skuba-dive",
+  "bugs": {
+    "url": "https://github.com/seek-oss/skuba-dive/issues"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "source-map-support": "^0.5.16"
+  },
   "description": "Minimal runtime for skuba",
-  "version": "0.0.0-semantically-released",
-  "main": "lib",
-  "typings": "lib/index.d.ts",
+  "devDependencies": {
+    "@types/module-alias": "2.0.0",
+    "semantic-release": "17.0.8",
+    "skuba": "3.7.3"
+  },
   "files": [
     "lib/**/*.d.ts",
     "lib/**/*.js",
     "lib/**/*.js.map",
     "register.js"
   ],
-  "sideEffects": true,
+  "homepage": "https://github.com/seek-oss/skuba-dive#readme",
   "license": "MIT",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "name": "skuba-dive",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seek-oss/skuba-dive.git"
+  },
   "scripts": {
     "build": "skuba build",
     "format": "skuba format",
@@ -19,17 +35,13 @@
     "release": "yarn build && semantic-release --success false",
     "test": "skuba test --coverage"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/seek-oss/skuba-dive.git"
+  "sideEffects": true,
+  "skuba": {
+    "entryPoint": "src/index.ts",
+    "template": "oss-npm-package",
+    "type": "package",
+    "version": "3.7.3"
   },
-  "dependencies": {
-    "module-alias": "^2.2.2",
-    "source-map-support": "^0.5.16"
-  },
-  "devDependencies": {
-    "@types/module-alias": "2.0.0",
-    "semantic-release": "17.0.8",
-    "skuba": "3.5.1"
-  }
+  "types": "./lib/index.d.ts",
+  "version": "0.0.0-semantically-released"
 }
