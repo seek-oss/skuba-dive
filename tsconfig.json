@@ -1,5 +1,4 @@
 {
-  "extends": "skuba/config/tsconfig.json",
   "compilerOptions": {
     "declaration": true,
     "incremental": true,
@@ -8,5 +7,6 @@
     "outDir": "lib",
     "removeComments": false
   },
-  "exclude": ["lib/**/*", "template/**/*"]
+  "exclude": ["lib*/**/*", "template/**/*"],
+  "extends": "skuba/config/tsconfig.json"
 }
