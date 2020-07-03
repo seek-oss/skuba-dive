@@ -15,7 +15,7 @@ Minimal runtime for [`skuba`](https://github.com/seek-oss/skuba).
   - [Env](#env)
   - [Register](#register)
 - [Design](#design)
-- [Development](#development)
+- [Contributing](https://github.com/seek-oss/skuba-dive/blob/master/CONTRIBUTING.md)
 
 ## API reference
 
@@ -92,36 +92,3 @@ See `skuba`'s [goals] and [non-goals] for more information.
 
 [goals]: https://github.com/seek-oss/skuba#goals
 [non-goals]: https://github.com/seek-oss/skuba#non-goals
-
-## Development
-
-### Prerequisites
-
-- Node.js 12+
-- Yarn 1.x
-
-```shell
-yarn install
-```
-
-### Lint
-
-```shell
-# fix
-yarn format
-
-# check
-yarn lint
-```
-
-### Test
-
-```shell
-yarn test
-```
-
-### Build
-
-```shell
-yarn build
-```
