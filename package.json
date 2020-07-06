@@ -9,7 +9,7 @@
   "description": "Minimal runtime for skuba",
   "devDependencies": {
     "@types/module-alias": "2.0.0",
-    "semantic-release": "17.0.8",
+    "semantic-release": "17.1.1",
     "skuba": "3.7.3"
   },
   "files": [
