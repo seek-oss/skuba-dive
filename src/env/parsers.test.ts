@@ -8,7 +8,7 @@ describe('nonNegativeInteger', () => {
   ] as const;
 
   it.each(happyCases)('parses %s', (_, input, output) =>
-    expect(parsers.nonNegativeInteger(input)).toBe(output),
+    expect(parsers.nonNegativeInteger(input, 'PORT')).toBe(output),
   );
 
   const sadCases = [
@@ -29,21 +29,27 @@ describe('nonNegativeInteger', () => {
   ] as const;
 
   it.each(sadCases)('throws on %s', (_, input) =>
-    expect(() => parsers.nonNegativeInteger(input)).toThrow(),
+    expect(() => parsers.nonNegativeInteger(input, 'PORT')).toThrow(
+      'process.env.PORT is not a non-negative integer',
+    ),
   );
 });
 
 describe('noop', () => {
-  it('passes through value', () => expect(parsers.noop('abc')).toBe('abc'));
+  it('passes through value', () =>
+    expect(parsers.noop('abc', 'VERSION')).toBe('abc'));
 });
 
 describe('oneOf', () => {
   const parse = parsers.oneOf(['local', 'prod']);
 
-  it('passes through value in list', () => expect(parse('prod')).toBe('prod'));
+  it('passes through value in list', () =>
+    expect(parse('prod', 'ENVIRONMENT')).toBe('prod'));
 
   it('throws on value not in list', () =>
-    expect(() => parse('dev')).toThrowErrorMatchingInlineSnapshot(
-      `"not a supported choice: 'dev'"`,
+    expect(() =>
+      parse('dev', 'ENVIRONMENT'),
+    ).toThrowErrorMatchingInlineSnapshot(
+      `"process.env.ENVIRONMENT is not a supported choice: 'dev'. Expected one of: ['local', 'prod']"`,
     ));
 });
