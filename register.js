@@ -6,6 +6,15 @@ if (typeof jest === 'undefined') {
   require('source-map-support/register');
 }
 
-const { addAlias } = require('module-alias');
+/**
+ * @see {@link https://nodejs.org/api/deprecations.html#DEP0144}
+ */
+const [firstModuleParent] = Object.values(require.cache).filter((m) =>
+  m.children.includes(module),
+);
 
-addAlias('src', module.parent.path);
+if (typeof firstModuleParent !== 'undefined') {
+  const { addAlias } = require('module-alias');
+
+  addAlias('src', firstModuleParent.path);
+}
