@@ -31,7 +31,7 @@ export const oneOf = <T>(choices: readonly T[]) => {
   };
 };
 
-const falseys = ['false', 'off', 'no', '0'];
+const falseys = ['false', 'off', 'no', 'n', '0'];
 
 export const boolean = (input: string): boolean =>
   falseys.includes(input.toLowerCase()) ? false : Boolean(input);
