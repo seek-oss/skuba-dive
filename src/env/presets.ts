@@ -19,3 +19,8 @@ export const oneOf = <T>(choices: readonly T[]) =>
  * Read an environment variable as a string.
  */
 export const string = create(parsers.noop);
+
+/**
+ * Read an environment variable as a boolean.
+ */
+export const boolean = create(parsers.boolean);

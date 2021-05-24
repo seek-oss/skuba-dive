@@ -53,3 +53,17 @@ describe('oneOf', () => {
       `"process.env.ENVIRONMENT is not a supported choice: 'dev'. Expected one of: ['local', 'prod']"`,
     ));
 });
+
+describe('boolean', () => {
+  const happyCases = ['1', 'true', 'yes', 'on', 'enabled'];
+
+  it.each(happyCases)('parses %p', (input) =>
+    expect(parsers.boolean(input)).toBe(true),
+  );
+
+  const sadCases = ['', 'false', 'no', 'off', '0', 'False', 'FALSE', 'n'];
+
+  it.each(sadCases)('parses %p', (input) =>
+    expect(parsers.boolean(input)).toBe(false),
+  );
+});

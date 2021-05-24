@@ -58,6 +58,12 @@ export const environment = Env.oneOf(ENVIRONMENTS)('ENVIRONMENT');
 
 export const port = Env.nonNegativeInteger('PORT', { default: undefined });
 // number | undefined
+
+export const version = Env.string('VERSION', { default: 'local' });
+// string | 'local'
+
+export const flag = Env.boolean('FLAG');
+// boolean
 ```
 
 Each function will throw if its environment variable is not set and `opts.default` is not provided.

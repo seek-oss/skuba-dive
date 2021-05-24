@@ -18,4 +18,11 @@ describe('presets', () => {
 
     expect(presets.string('SKUBA_DIVE')).toBe('123');
   });
+
+  test('boolean', () => {
+    process.env.IS_A = 'false';
+    expect(presets.boolean('IS_A')).toBe(false);
+    process.env.IS_B = 'true';
+    expect(presets.boolean('IS_B')).toBe(true);
+  });
 });
