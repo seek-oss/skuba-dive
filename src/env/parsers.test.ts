@@ -61,16 +61,9 @@ describe('boolean', () => {
     expect(parsers.boolean(input)).toBe(true),
   );
 
-  const sadCases = [
-    [''],
-    ['false'],
-    ['no'],
-    ['off'],
-    ['0'],
-    ['False'],
-  ] as const;
+  const sadCases = ['', 'false', 'no', 'off', '0', 'False'];
 
-  it.each(sadCases)('parses %s', (input) =>
+  it.each(sadCases)('parses %p', (input) =>
     expect(parsers.boolean(input)).toBe(false),
   );
 });
