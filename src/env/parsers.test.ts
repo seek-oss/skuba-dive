@@ -55,9 +55,9 @@ describe('oneOf', () => {
 });
 
 describe('boolean', () => {
-  const happyCases = [['1'], ['true'], ['yes'], ['on'], ['enabled']] as const;
+  const happyCases = ['1', 'true', 'yes', 'on', 'enabled'];
 
-  it.each(happyCases)('parses %s', (input) =>
+  it.each(happyCases)('parses %p', (input) =>
     expect(parsers.boolean(input)).toBe(true),
   );
 
