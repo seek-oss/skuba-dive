@@ -57,13 +57,13 @@ describe('oneOf', () => {
 describe('boolean', () => {
   const happyCases = ['1', 'true', 'yes', 'on', 'enabled'];
 
-  it.each(happyCases)('parses %p', (input) =>
+  it.each(happyCases)('accepts %p', (input) =>
     expect(parsers.boolean(input)).toBe(true),
   );
 
   const sadCases = ['', 'false', 'no', 'off', '0', 'False', 'FALSE', 'n'];
 
-  it.each(sadCases)('parses %p', (input) =>
+  it.each(sadCases)('rejects %p', (input) =>
     expect(parsers.boolean(input)).toBe(false),
   );
 });
