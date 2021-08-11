@@ -9,7 +9,7 @@
   "description": "Minimal runtime for skuba",
   "devDependencies": {
     "@types/module-alias": "2.0.1",
-    "skuba": "3.14.3"
+    "skuba": "3.14.4"
   },
   "files": [
     "lib/**/*.d.ts",
