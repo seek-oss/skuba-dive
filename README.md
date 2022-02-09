@@ -70,15 +70,20 @@ Each function will throw if its environment variable is not set and `opts.defaul
 
 ### Register
 
-Runtime hook for:
+Runtime hook for import paths relative to `/src`.
 
-- Import paths relative to `/src`
-- Stack traces that map back to your `.ts` sources
-
-Make a side-effectful import at the top of your entry point, e.g. `/src/app.ts`:
+Make a side-effectful import at the top of your entry point(s):
 
 ```typescript
+// /src/register.ts
+
 import 'skuba-dive/register';
+```
+
+```typescript
+// /src/app.ts
+
+import './register';
 
 import { config } from 'src/config';
 
