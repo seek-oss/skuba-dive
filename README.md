@@ -101,5 +101,5 @@ The hook must be imported from a module that sits directly under `/src` for modu
 
 See `skuba`'s [goals] and [non-goals] for more information.
 
-[goals]: https://github.com/seek-oss/skuba#goals
-[non-goals]: https://github.com/seek-oss/skuba#non-goals
+[goals]: https://seek-oss.github.io/skuba/docs/about.html#goals
+[non-goals]: https://seek-oss.github.io/skuba/docs/about.html#non-goals
