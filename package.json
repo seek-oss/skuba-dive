@@ -8,7 +8,7 @@
   "description": "Minimal runtime for skuba",
   "devDependencies": {
     "@types/module-alias": "2.0.1",
-    "skuba": "5.0.1"
+    "skuba": "5.1.0"
   },
   "engines": {
     "node": ">=14.18"
