@@ -13,10 +13,10 @@ export const nonNegativeInteger = (input: string, name: string): number => {
 export const noop = <T>(input: T, _name: string): T => input;
 
 export const oneOf = <T>(choices: readonly T[]) => {
-  const isChoice = (value: unknown): value is typeof choices[number] =>
+  const isChoice = (value: unknown): value is (typeof choices)[number] =>
     new Set<unknown>(choices).has(value);
 
-  return (input: unknown, name: string): typeof choices[number] => {
+  return (input: unknown, name: string): (typeof choices)[number] => {
     if (!isChoice(input)) {
       throw Error(
         `process.env.${name} is not a supported choice: '${String(
