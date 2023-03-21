@@ -51,7 +51,7 @@ import { Env } from 'skuba-dive';
 
 const ENVIRONMENTS = ['dev', 'prod'] as const;
 
-export type Environment = typeof ENVIRONMENTS[number];
+export type Environment = (typeof ENVIRONMENTS)[number];
 
 export const environment = Env.oneOf(ENVIRONMENTS)('ENVIRONMENT');
 // 'dev' | 'prod'
