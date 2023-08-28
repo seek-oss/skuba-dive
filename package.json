@@ -34,7 +34,7 @@
     "module-alias": "^2.2.2"
   },
   "devDependencies": {
-    "@types/module-alias": "2.0.1",
+    "@types/module-alias": "2.0.2",
     "skuba": "7.1.1"
   },
   "engines": {
