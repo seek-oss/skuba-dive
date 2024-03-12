@@ -18,7 +18,7 @@ describe('create', () => {
       expect(() =>
         create(parse)(VAR, { default: undefined }),
       ).toThrowErrorMatchingInlineSnapshot(
-        `"Unexpected token } in JSON at position 0"`,
+        `"Unexpected token '}', "}" is not valid JSON"`,
       );
     });
 
@@ -35,7 +35,7 @@ describe('create', () => {
     it('throws on parsing error', () => {
       process.env[VAR] = '}';
       expect(() => create(parse)(VAR)).toThrowErrorMatchingInlineSnapshot(
-        `"Unexpected token } in JSON at position 0"`,
+        `"Unexpected token '}', "}" is not valid JSON"`,
       );
     });
 
