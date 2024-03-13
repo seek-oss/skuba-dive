@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@types/module-alias": "2.0.4",
-    "skuba": "7.3.1"
+    "skuba": "7.5.0"
   },
   "engines": {
     "node": ">=14.18"
@@ -44,6 +44,6 @@
     "entryPoint": "src/index.ts",
     "template": "oss-npm-package",
     "type": "package",
-    "version": "3.7.3"
+    "version": "7.5.0"
   }
 }
