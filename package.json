@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@types/module-alias": "2.0.4",
-    "skuba": "8.0.0"
+    "skuba": "8.0.1"
   },
   "engines": {
     "node": ">=14.18"
